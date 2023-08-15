@@ -1,0 +1,20 @@
+/* variables.css */
+
+/* Colors */
+:root {
+    --primary-color: #003366;
+    --secondary-color: #009999;
+    --accent-color-1: #FF6B6B;
+    --accent-color-2: #FFD700;
+    --neutral-color-1: #F5F5F5;
+    --neutral-color-2: #333333;
+  }
+  
+  /* Sizes */
+  :root {
+    --font-size-small: 1.25rempx;
+    --font-size-medium: 2.5rem;
+    --font-size-large: 3.5rem;
+    --button-padding: 10px 20px;
+  }
+  

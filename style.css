@@ -1,0 +1,392 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,700&family=Poppins:wght@400;500;700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import "variables.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: var(--font-size-medium);
+  color: var(--neutral-color-2);
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  font-size: var(--font-size-large);
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--font-size-medium);
+}
+
+p {
+  color: var(--neutral-color-2);
+  line-height: 1.5rem;
+  font-size: 25px;
+}
+
+hr {
+  border: none; /* Remove default border */
+  border-top: 2px solid var(--neutral-color-1); /* Light Gray */
+  margin: 20px 0; /* Adjust spacing as needed */
+}
+
+.button {
+  font-size: var(--font-size-small);
+  padding: var(--button-padding);
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.banner {
+  color: var(--neutral-color-2);
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+.content {
+  text-align: center;
+  font-size: 16px;
+}
+
+.content span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.p-img {
+  margin-block: 40px;
+}
+.p-img img {
+  height: 300px;
+  width: 300px;
+  border: none;
+  border-radius: 50%;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+/* Nav bar */
+
+#navbar {
+  background-color: var(--neutral-color-1);
+  padding: 10px 0;
+}
+
+.nav-link {
+  font-size: 22px;
+  color: var(--primary-color);
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition on hover */
+}
+
+.nav-link:hover {
+  color: var(--accent-color-1); /* Use your accent color for hover state */
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  gap: 17px;
+}
+
+.logo {
+  display: flex;
+  font-size: var(--font-size-medium);
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+/* Hero section */
+
+.profile {
+  height: 76vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.heading-1 {
+  text-align: center;
+  margin-block: 14px;
+}
+
+/* Home Section */
+
+/* About Section */
+
+/* Skills Section */
+.skill-set h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.skills-link {
+  flex-direction: column;
+  justify-content: flex-end;
+
+  gap: 15px;
+}
+
+.s-link {
+  font-size: 20px;
+  color: var(--secondary-color);
+}
+
+/* Services Section */
+
+#services h3 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#services h2 {
+  margin-bottom: 25px;
+}
+
+/* Styles for services section */
+#services {
+  background-image: url("path-to-background-image.jpg"); /* Replace with your background image */
+  background-size: cover;
+  padding: 50px 0;
+  text-align: center;
+  color: var(--neutral-color-2);
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.service-card {
+  background-color: var(--neutral-color-1);
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-card i {
+  font-size: 36px;
+  color: var(--accent-color-2);
+  margin-bottom: 10px;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 16px;
+}
+
+.service-card .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: var(--accent-color-1);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  width: 100%; /* Ensure buttons take up full width */
+  max-width: 200px; /* Limit the maximum width of buttons */
+  font-size: 14px;
+}
+
+/* contact section */
+
+.contact-container h4 {
+  font-size: 24px;
+  color: var(--secondary-color);
+  text-align: center;
+  margin-top: 15px;
+}
+
+.contact-through {
+  padding: 20px 10px;
+  text-align: center;
+}
+
+.contact-link {
+  font-size: 16px;
+  color: var(--primary-color);
+  text-align: center;
+}
+
+.contact-link span {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+/* footer section */
+
+footer {
+  background-color: var(--neutral-color-1);
+  padding: 10px 0;
+  color: var(--primary-color);
+}
+
+.icons {
+  gap: 30px;
+  font-size: 24px;
+  align-items: center;
+  justify-content: center;
+}
+
+.icons a {
+  color: var(--primary-color);
+}
+
+.footer-content p {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Mobile Devices */
+@media screen and (max-width: 767px) {
+  /* Adjust font sizes and margins for smaller screens */
+  body {
+    font-size: 16px;
+  }
+  
+  h1 {
+    font-size: 38px;
+  }
+  
+  h2 {
+    font-size: 28px;
+  }
+  
+  p {
+    font-size: 18px;
+  }
+  
+  /* Update layout for smaller screens */
+  .flex {
+    flex-direction: column;
+  }
+  
+  .p-img img {
+    height: auto;
+    width: 100%;
+  }
+
+  
+  
+  /* Adjust padding and margins for smaller screens */
+  .container {
+    padding: 0 10px;
+  }
+  
+  /* Update navigation bar for smaller screens */
+  .nav-items {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 20px;
+  }
+
+  .skill-set {
+    margin-block: 30px;
+  }
+
+  .skills-link {
+    margin-top: 20px;
+  }
+
+  .footer>.flex {
+    flex-direction: row;
+  }
+
+  
+  /* Adjust other styles as needed */
+}
+
+/* Tablets and Smaller Desktops */
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  /* Update layout and spacing for tablet-sized screens */
+  .container {
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 38px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+  
+  .flex {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .p-img img {
+    height: auto;
+    width: 100%;
+  }
+
+  .skill-set {
+    margin-block: 30px;
+  }
+
+  .footer>.flex {
+    flex-direction: row;
+  }
+
+  
+  /* Adjust other styles as needed */
+}
+
+/* Larger Desktops */
+@media screen and (min-width: 1200px) {
+  /* Update layout and spacing for larger desktop screens */
+  .container {
+    padding: 0 40px;
+  }
+
+  
+  /* Adjust other styles as needed */
+}
+
+
